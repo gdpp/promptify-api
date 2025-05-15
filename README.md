@@ -152,4 +152,36 @@ Bonus opcionales para destacar
 -   Tests básicos (Jest + React Testing Library + Supertest)
 -   Deploy automático en Vercel + Railway
 -   Notificaciones tipo toast para UX (react-toastify o similar)
--   Rate limiting / seguridad básica (express-rate-limit) -->
+-   Rate limiting / seguridad básica (express-rate-limit) 
+
+✅ Frontend (React + TypeScript + Tailwind)
+React
+TypeScript
+Vite (como bundler rápido)
+Tailwind CSS (estilos rápidos y limpios)
+React Router (rutas si es SPA)
+Axios o fetch (para llamadas al backend)
+React Query o SWR (opcional para manejo de datos/estado)
+Heroicons o Lucide (iconos bonitos)
+Zod o Yup (opcional para validación de formularios)
+clsx o classnames (opcional para manejo de clases condicionales)
+eslint + prettier (linter y formato de código)
+vite-plugin-tailwindcss (opcional si usas Tailwind Plugins)
+
+✅ Backend (Node.js + Express + Prisma + PostgreSQL)
+Node.js
+Express
+TypeScript
+Prisma (ORM)
+@prisma/client (cliente de Prisma)
+PostgreSQL
+dotenv (para variables de entorno)
+CORS
+Zod o Joi (opcional para validación de entrada)
+ts-node-dev o nodemon (auto-reload en desarrollo)
+Helmet (seguridad básica)
+express.json() (middleware para parsear JSON)
+express-validator (opcional para validar entradas)
+bcrypt (opcional para auth)
+jsonwebtoken (opcional para auth con JWT)
+-->
