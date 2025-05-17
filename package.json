@@ -1,0 +1,30 @@
+{
+  "name": "promptify-api",
+  "version": "1.0.0",
+  "description": "API for Promptify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "promptify",
+    "api",
+    "promptify-api"
+  ],
+  "author": "Gustavo Perez",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "prisma": "^6.8.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
+}

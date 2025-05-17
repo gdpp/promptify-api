@@ -1,4 +1,4 @@
-# Promptify – Prompts generator for Devs
+# Promptify – Prompts generator for Devs (API)
 
 A simple tool to generate and share development prompts for inspiration and learning.
 Think. Prompt. Build.
@@ -16,44 +16,30 @@ Think. Prompt. Build.
 | AI to suggest new prompts        | Low          | Integration with OpenAI API for suggestions  |
 
 ## 🔧 Used Stack
+-   **Node.js**: Runtime environment for JavaScript on the backend.
+-   **Express**: Minimalist framework for creating servers in Node.js.
+-   **TypeScript**: Superset of JavaScript that adds static typing.
+-   **Prisma (ORM)**: Tool for interacting with databases easily.
+-   **PostgreSQL**: Relational database used for storing data.
+-   **JsonWebTokens (JWT)**: Handles authentication with JSON Web Tokens.
+-   **Middlewares**:
+        - **CORS**: Middleware to enable cross-origin resource sharing.
+        - **Helmet**: Security middleware to protect the application.
+        - **Json**: Middleware for parsing JSON in HTTP requests.
+
+<!-- 
 1.   **Frontend**: `React(w/Typescript) + DaisyUI`
-2.   **Backend**: `Express (Node.Js w/Typescript)`
 3.   **Database**: `PostgreSQL (w/Prisma)`
 4.   **IA**: OpenAI API for prompt generation
 5.   **Deploy**:
     -   *Frontend*: TBD
     -   *Backend*: TBD
-    -   *Database*: TBD
+    -   *Database*: TBD -->
 
-<!-- ## 📂 Estructura básica del proyecto -->
 
-<!-- ```plaintext
-/promptify
-│
-├── /frontend
-│   ├── /src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── hooks
-│   │   └── services (API calls)
-│   └── package.json
-│
-├── /backend
-│   ├── /src
-│   │   ├── controllers
-│   │   ├── routes
-│   │   ├── models (Prisma schema)
-│   │   ├── middleware (auth, error handler)
-│   │   └── services (DB, OpenAI)
-│   └── package.json
-│
-└── README.md
-``` -->
 <!--
 🗃️ Esquema básico de base de datos (PostgreSQL)
 prisma
-Copy
-Edit
 model User {
   id          String    @id @default(cuid())
   email       String    @unique
@@ -111,6 +97,7 @@ model Comment {
   content   String
   createdAt DateTime @default(now())
 }
+
 🛠️ Endpoints backend principales (REST API)
 Método	Ruta	Descripción	Auth
 POST	/api/auth/register	Registrar usuario	No
@@ -168,20 +155,5 @@ clsx o classnames (opcional para manejo de clases condicionales)
 eslint + prettier (linter y formato de código)
 vite-plugin-tailwindcss (opcional si usas Tailwind Plugins)
 
-✅ Backend (Node.js + Express + Prisma + PostgreSQL)
-Node.js
-Express
-TypeScript
-Prisma (ORM)
-@prisma/client (cliente de Prisma)
-PostgreSQL
-dotenv (para variables de entorno)
-CORS
-Zod o Joi (opcional para validación de entrada)
-ts-node-dev o nodemon (auto-reload en desarrollo)
-Helmet (seguridad básica)
-express.json() (middleware para parsear JSON)
-express-validator (opcional para validar entradas)
-bcrypt (opcional para auth)
-jsonwebtoken (opcional para auth con JWT)
+
 -->
