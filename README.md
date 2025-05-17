@@ -23,9 +23,9 @@ Think. Prompt. Build.
 -   **PostgreSQL**: Relational database used for storing data.
 -   **JsonWebTokens (JWT)**: Handles authentication with JSON Web Tokens.
 -   **Middlewares**:
-        - **CORS**: Middleware to enable cross-origin resource sharing.
-        - **Helmet**: Security middleware to protect the application.
-        - **Json**: Middleware for parsing JSON in HTTP requests.
+      * **CORS**: Middleware to enable cross-origin resource sharing.
+      * **Helmet**: Security middleware to protect the application.
+      * **Json**: Middleware for parsing JSON in HTTP requests.
 
 <!-- 
 1.   **Frontend**: `React(w/Typescript) + DaisyUI`
