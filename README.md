@@ -15,7 +15,7 @@ Think. Prompt. Build.
 | Comments in prompts              | Medium       | Basic, non-threaded comments                 |
 | AI to suggest new prompts        | Low          | Integration with OpenAI API for suggestions  |
 
-## 🔧 Used Stack
+## 🔧 Used Technologies
 -   **Node.js**: Runtime environment for JavaScript on the backend.
 -   **Express**: Minimalist framework for creating servers in Node.js.
 -   **TypeScript**: Superset of JavaScript that adds static typing.
@@ -27,77 +27,7 @@ Think. Prompt. Build.
       * **Helmet**: Security middleware to protect the application.
       * **Json**: Middleware for parsing JSON in HTTP requests.
 
-<!-- 
-1.   **Frontend**: `React(w/Typescript) + DaisyUI`
-3.   **Database**: `PostgreSQL (w/Prisma)`
-4.   **IA**: OpenAI API for prompt generation
-5.   **Deploy**:
-    -   *Frontend*: TBD
-    -   *Backend*: TBD
-    -   *Database*: TBD -->
-
-
 <!--
-🗃️ Esquema básico de base de datos (PostgreSQL)
-prisma
-model User {
-  id          String    @id @default(cuid())
-  email       String    @unique
-  password    String
-  name        String?
-  createdAt   DateTime  @default(now())
-  prompts     Prompt[]  @relation("UserPrompts")
-  favorites   Favorite[]
-  votes       Vote[]
-  comments    Comment[]
-}
-
-model Prompt {
-  id          String    @id @default(cuid())
-  title       String
-  description String
-  tags        String[]  // tags array
-  author      User      @relation(fields: [authorId], references: [id])
-  authorId    String
-  createdAt   DateTime  @default(now())
-  votes       Vote[]
-  comments    Comment[]
-  favorites   Favorite[]
-}
-
-model Vote {
-  id        String   @id @default(cuid())
-  user      User     @relation(fields: [userId], references: [id])
-  userId    String
-  prompt    Prompt   @relation(fields: [promptId], references: [id])
-  promptId  String
-  value     Int      // 1 for upvote
-  createdAt DateTime @default(now())
-
-  @@unique([userId, promptId]) // no duplicate votes
-}
-
-model Favorite {
-  id        String   @id @default(cuid())
-  user      User     @relation(fields: [userId], references: [id])
-  userId    String
-  prompt    Prompt   @relation(fields: [promptId], references: [id])
-  promptId  String
-  createdAt DateTime @default(now())
-
-  @@unique([userId, promptId])
-}
-
-model Comment {
-  id        String   @id @default(cuid())
-  user      User     @relation(fields: [userId], references: [id])
-  userId    String
-  prompt    Prompt   @relation(fields: [promptId], references: [id])
-  promptId  String
-  content   String
-  createdAt DateTime @default(now())
-}
-
 🛠️ Endpoints backend principales (REST API)
 Método	Ruta	Descripción	Auth
 POST	/api/auth/register	Registrar usuario	No
@@ -134,12 +64,11 @@ Botón para abrir modal o página con input de tema
 Mostrar resultado generado con botón de guardar
 
 Bonus opcionales para destacar
--   Dark mode (Tailwind + localStorage)
--   SEO básico con Next.js o React Helmet
+-   SEO básico React Helmet
 -   Tests básicos (Jest + React Testing Library + Supertest)
 -   Deploy automático en Vercel + Railway
 -   Notificaciones tipo toast para UX (react-toastify o similar)
--   Rate limiting / seguridad básica (express-rate-limit) 
+-   Rate limiting / seguridad básica (express-rate-limit)
 
 ✅ Frontend (React + TypeScript + Tailwind)
 React
@@ -153,7 +82,12 @@ Heroicons o Lucide (iconos bonitos)
 Zod o Yup (opcional para validación de formularios)
 clsx o classnames (opcional para manejo de clases condicionales)
 eslint + prettier (linter y formato de código)
-vite-plugin-tailwindcss (opcional si usas Tailwind Plugins)
-
-
 -->
+<!-- 
+1.   **Frontend**: `React(w/Typescript) + DaisyUI`
+3.   **Database**: `PostgreSQL (w/Prisma)`
+4.   **IA**: OpenAI API for prompt generation
+5.   **Deploy**:
+    -   *Frontend*: TBD
+    -   *Backend*: TBD
+    -   *Database*: TBD -->
