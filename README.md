@@ -1,7 +1,7 @@
 # Promptify – Prompts generator for Devs (API)
 
 A simple tool to generate and share development prompts for inspiration and learning.
-Think. Prompt. Build.
+> Think. Prompt. Build.
 
 ## 🗓️ MVP Scope (8-10 days)
 
