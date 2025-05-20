@@ -27,8 +27,8 @@ A simple tool to generate and share development prompts for inspiration and lear
       * **Helmet**: Security middleware to protect the application.
       * **Json**: Middleware for parsing JSON in HTTP requests.
 
+## 🛠️ Main Backend Endpoints (REST API)
 <!--
-🛠️ Endpoints backend principales (REST API)
 Método	Ruta	Descripción	Auth
 POST	/api/auth/register	Registrar usuario	No
 POST	/api/auth/login	Login, devolver JWT	No
