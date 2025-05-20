@@ -7,7 +7,9 @@ declare global {
 }
 
 if (!global.__db) {
-    global.__db = new PrismaClient();
+    global.__db = new PrismaClient({
+        log: ['query']
+    });
 }
 
 db = global.__db;
