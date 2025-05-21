@@ -3,7 +3,7 @@
 A simple tool to generate and share development prompts for inspiration and learning.
 > Think. Prompt. Build.
 
-## 🗓️ MVP Scope (8-10 days)
+## 🗓️ MVP Scope
 
 | **Feature**                      | **Priority** | **Description**                              |
 |----------------------------------|--------------|----------------------------------------------|
@@ -44,24 +44,6 @@ POST	/api/prompts/:id/comment	Agregar comentario	Sí
 GET	/api/prompts/:id/comments	Listar comentarios	No
 POST	/api/ai/generate	Generar prompt con IA (OpenAI)	Sí
 
-UI / UX: Flujo básico
-Página de inicio
-Lista de prompts con filtros por tags
-Buscador general
-Paginación
-Registro / Login
-Formulario sencillo con validación
-Dashboard usuario
-Crear/editar/eliminar prompts
-Lista de favoritos
-Historial de votos y comentarios
-Detalle de prompt
-Ver prompt, tags, autor
-Votar y marcar favorito
-Ver comentarios y añadir uno
-Generar prompt con IA (opcional)
-Botón para abrir modal o página con input de tema
-Mostrar resultado generado con botón de guardar
 
 Bonus opcionales para destacar
 -   SEO básico React Helmet
@@ -70,21 +52,9 @@ Bonus opcionales para destacar
 -   Notificaciones tipo toast para UX (react-toastify o similar)
 -   Rate limiting / seguridad básica (express-rate-limit)
 
-✅ Frontend (React + TypeScript + Tailwind)
-React
-TypeScript
-Vite (como bundler rápido)
-Tailwind CSS (estilos rápidos y limpios)
-React Router (rutas si es SPA)
-Axios o fetch (para llamadas al backend)
-React Query o SWR (opcional para manejo de datos/estado)
-Heroicons o Lucide (iconos bonitos)
-Zod o Yup (opcional para validación de formularios)
-clsx o classnames (opcional para manejo de clases condicionales)
-eslint + prettier (linter y formato de código)
+
 -->
 <!-- 
-1.   **Frontend**: `React(w/Typescript) + DaisyUI`
 3.   **Database**: `PostgreSQL (w/Prisma)`
 4.   **IA**: OpenAI API for prompt generation
 5.   **Deploy**:
